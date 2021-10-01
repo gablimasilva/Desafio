@@ -23,14 +23,14 @@
 
        
        var ax_numero2 = Math.random()*9+1
-
+        if(ipt_nome.value == ''){alert('Erro!Digite seu nome!')}
         if (numeroSorteado < 1 || numeroSorteado > 10) {
             alert('Número invalido, tente novamente!!')
         } else {
             if (ax_numero2.toFixed() == numeroSorteado) {
             aux_texto.innerHTML = `Parabéns, ${ipt_nome.value} você foi sorteado(a) após ${contagem} sorteios!`;
         }else{
-            aux_texto.innerHTML = `${ax_numero2.toFixed()}`
+            aux_texto.innerHTML = ``
         }
 
         }
